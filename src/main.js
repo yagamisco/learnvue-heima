@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import app from './App.vue'
+import { Header } from 'mint-ui'
+import './lib/mui/css/mui.min.css'
 
-Vue.config.productionTip = false
+Vue.component(Header.name, Header)
 
 new Vue({
-  router,
-  render: h => h(App)
+  render: h => h(app)
 }).$mount('#app')
